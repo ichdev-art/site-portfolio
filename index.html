@@ -1,270 +1,239 @@
 <!DOCTYPE html>
 <html lang="fr">
-  <head>
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jourdain Ichem | Expert Full Stack Pro</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./assets/scss/style.css" />
-    <title>Ich'Dev | Portfolio Développeur Web</title>
-    <link
-      href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;700&display=swap"
-      rel="stylesheet"
-    />
-  </head>
-  <body>
+</head>
+<body>
+
+    <div id="preloader">
+        <div class="loader-content">
+            <div class="loader-logo">Ich'<span>Dev</span></div>
+            <div class="loader-bar"></div>
+        </div>
+    </div>
+    <div class="scroll-progress"></div>
+    <div class="cursor-dot"></div>
+    <div class="cursor-outline"></div>
+
     <header id="header">
-      <nav>
-        <ul>
-          <li><a href="#accueil">Accueil</a></li>
-          <li><a href="#apropos">À Propos</a></li>
-          <li><a href="#competences">Compétences</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </nav>
+        <nav class="container">
+            <div class="logo-area">
+                <div class="logo">Ich'<span>Dev</span></div>
+                <div class="status-badge"><span class="dot"></span> Disponible</div>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#accueil" class="magnet">Accueil</a></li>
+                <li><a href="#competences" class="magnet">Expertise</a></li>
+                <li><a href="#projets" class="magnet">Projets</a></li>
+                <li><a href="#contact" class="btn-nav magnet">Contact</a></li>
+            </ul>
+        </nav>
     </header>
+
     <main>
-      <section id="accueil">
-        <div class="container">
-          <img
-            src="./assets/images/ichem.webp"
-            alt="Photo de Jourdain Ichem, développeur junior"
-          />
-          <h1>Jourdain Ichem</h1>
-          <h3>
-            Développeur Web Full Stack | Passionné par le code et le design
-          </h3>
-          <a href="#projets" class="btn">Voir mes projets</a>
-        </div>
-      </section>
-      <section id="apropos">
-        <div class="container">
-          <h2>À Propos de moi</h2>
-          <p>Bienvenue sur mon portfolio !</p>
-          <p>
-            Je suis Ichem Jourdain, un développeur Full Stack Junior passionné
-            par la création de solutions innovantes.
-          </p>
-          <p>
-            Explorez mes projets et compétences pour en savoir plus sur mon
-            travail.
-          </p>
-        </div>
-      </section>
-      <section id="competences">
-        <div class="container">
-          <h2>Compétences</h2>
-          <ul>
-            <li>HTML</li>
-            <li>Bootstrap</li>
-            <li>SCSS</li>
-            <li>CSS</li>
-            <li>JavaScript</li>
-            <li>PHP</li>
-            <li>MySQL</li>
-            <li>Git</li>
-            <li>GitHub</li>
-          </ul>
-          <p>
-            Je suis constamment en train d'apprendre de nouvelles technologies
-            et de perfectionner
-          </p>
-        </div>
-      </section>
-      <section id="projets">
-        <div class="container">
-          <h2>Mes projets</h2>
-          <div class="projets-grid">
-            <!-- Cartes projets à remplir ici -->
-            <div class="projet-card">
-              <img
-                src="assets/images/shoessplash.png"
-                alt="Aperçu du projet shoessplash"
-              />
-              <img
-                src="assets/images/shoessplash2.png"
-                alt="Aperçu du projet shoessplash"
-              />
-              <img
-                src="assets/images/shoessplashresponsive.png"
-                alt="Aperçu du projet shoessplash responsive"
-              />
-              <img
-                src="assets/images/shoessplashresponsive2.png"
-                alt="Aperçu du projet shoessplash responsive 2"
-              />
-              <h3>ShoesSplash</h3>
-              <p>
-                Copy4 d'un site de chaussure effectué dans le cadre de ma formation.
-              </p>
-              <p>CSS</p>
-              <a
-                href="https://ichdev-art.github.io/ShoeSplash/"
-                target="_blank"
-                class="btn-secondaire"
-                >Voir le projet</a
-              >
+        <section id="accueil" class="hero">
+            <div class="container">
+                <div class="badge-tech-intro">Portfolio 2026</div>
+                <h1>Jourdain Ichem</h1>
+                <h2 class="typing-text"></h2>
+                <p class="hero-subtitle">Conception d'écosystèmes numériques scalables et interfaces haute performance.</p>
+                <div class="hero-btns">
+                    <a href="#projets" class="btn-primary magnet">Voir les bangers</a>
+                    <a href="./assets/cv_ichem.pdf" class="btn-outline magnet" download><i class="fas fa-download"></i> Mon CV</a>
+                </div>
             </div>
-            <div class="projet-card">
-              <img
-                src="assets/images/chocoboom1.png"
-                alt="Aperçu du projet chocoboom"
-              />
-              <img
-                src="assets/images/chocoboom.png"
-                alt="Aperçu du projet chocoboom"
-              />
-              <img
-                src="assets/images/chocoboomresponsive.png"
-                alt="Aperçu du projet chocoboom responsive"
-              />
-              <img
-                src="assets/images/chocoboomresponsive2.png"
-                alt="Aperçu du projet chocoboom responsive 2"
-              />
-              <h3>ChocoBoom</h3>
-              <p>
-                Copy4 d'un site de chocolat effectué dans le cadre de ma formation et du responsive.
-              </p>
-              <p>HTML/CSS</p>
-              <a
-                href="https://ichdev-art.github.io/Choco-boom/"
-                target="_blank"
-                class="btn-secondaire"
-                >Voir le projet</a
-              >
+        </section>
+
+        <section id="competences">
+            <div class="container">
+                <h2 class="section-title">Expertise Technique</h2>
+                <div class="skills-grid">
+                    <div class="skill-card magnet">
+                        <i class="fab fa-html5"></i>
+                        <h3>Frontend</h3>
+                        <p>HTML5, SCSS, JavaScript ES6</p>
+                    </div>
+                    <div class="skill-card magnet">
+                        <i class="fas fa-database"></i>
+                        <h3>Backend</h3>
+                        <p>PHP, MySQL, Gestion CRUD</p>
+                    </div>
+                    <div class="skill-card magnet">
+                        <i class="fas fa-tools"></i>
+                        <h3>Outils</h3>
+                        <p>Git, GitHub, VS Code, Figma</p>
+                    </div>
+                </div>
             </div>
-            <div class="projet-card">
-              <img
-                src="assets/images/timereal.png"
-                alt="Aperçu du projet timeReal"
-              />
-              <img
-                src="assets/images/timereal2.png"
-                alt="Aperçu du projet timeReal"
-              />
-              <img
-                src="assets/images/timerealresponsive.png"
-                alt="Aperçu du projet timeReal responsive"
-              />
-              <img
-                src="assets/images/timerealresponsive2.png"
-                alt="Aperçu du projet timeReal responsive 2"
-              />
-              <h3>TimeReal</h3>
-              <p>
-                Créaion d'un site sur la gastronomie française dans le cadre de ma formation.
-              </p>
-              <p>HTML/CSS</p>
-              <a
-                href="https://ichdev-art.github.io/timereal.github.io/"
-                target="_blank"
-                class="btn-secondaire"
-                >Voir le projet</a
-              >
+        </section>
+
+        <section id="projets">
+            <div class="container">
+                <h2 class="section-title">Réalisations</h2>
+                <div class="projets-grid">
+                    <article class="projet-card magnet" data-project="angie">
+                        <div class="projet-img-container">
+                            <img src="./assets/images/angie.png" alt="Senteur d'Angie" class="projet-img">
+                            <div class="img-overlay"><span>Détails Techniques</span></div>
+                        </div>
+                        <div class="projet-info">
+                            <h3>Senteur d'Angie</h3>
+                            <p>Architecture Full-Stack pour une boutique de luxe.</p>
+                            <div class="tech-tags">
+                                <span class="tag-php">PHP 8</span>
+                                <span class="tag-mysql">MySQL</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="projet-card magnet" data-project="shoes">
+                        <div class="projet-img-container">
+                            <img src="./assets/images/shoessplash.png" alt="ShoesSplash" class="projet-img">
+                            <div class="img-overlay"><span>Détails Techniques</span></div>
+                        </div>
+                        <div class="projet-info">
+                            <h3>ShoesSplash</h3>
+                            <p>Intégration d'une interface e-commerce moderne.</p>
+                            <div class="tech-tags">
+                                <span class="tag-js">JavaScript</span>
+                                <span class="tag-scss">SCSS</span>
+                            </div>
+                        </div>
+                    </article>
+                </div>
             </div>
-        
-            <div class="projet-card">
-              <img
-                src="assets/images/off1.png"
-                alt="Aperçu du projet off"
-              />
-              <img
-                src="assets/images/off.png"
-                alt="Aperçu du projet off"
-              />
-              <img
-                src="assets/images/offresponsive.png"
-                alt="Aperçu du projet off responsive"
-              />
-              <img
-                src="assets/images/offresponsive2.png"
-                alt="Aperçu du projet off responsive 2"
-              />
-              <h3>OFF ( Open Food Fact )</h3>
-              <p>
-                Création d'un site similaire a Open Food Fact avec les recherches des scans de produit.
-              </p>
-              <p>HTML/CSS/JS</p>
-              <a
-                href="https://ichdev-art.github.io/ShoeSplash/"
-                target="_blank"
-                class="btn-secondaire"
-                >Voir le projet</a
-              >
+        </section>
+
+        <section id="temoignages">
+            <div class="container">
+                <h2 class="section-title">Avis Clients</h2>
+                <div class="testimonial-grid">
+                    <div class="testimonial-card magnet">
+                        <i class="fas fa-quote-left quote-icon"></i>
+                        <p>"Ichem a su transformer notre vision en une plateforme fluide. Un vrai pro du PHP."</p>
+                        <div class="author">
+                            <strong>Angie D.</strong>
+                            <span>Gérante - Senteur d'Angie</span>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="projet-card">
-              <img
-                src="assets/images/angie.png"
-                alt="Aperçu du projet senteur d'angie"
-              />
-              <img
-                src="assets/images/angiepanier.png"
-                alt="Aperçu du projet senteur d'angie"
-              />
-              <img
-                src="assets/images/angieadmin.png"
-                alt="Aperçu du projet senteur d'angie responsive"
-              />
-              <img
-                src="assets/images/angieresponsive.png"
-                alt="Aperçu du projet senteur d'angie responsive 2"
-              />
-              <h3>Senteur d'angie</h3>
-              <p>
-                Creation d'un site e-commerce dans le cadre de mon stage en fin de formation.
-              </p>
-              <p>HTML / SCSS / JS / PHP / MySQL</p>
-              <a
-                href="#"
-                target="_blank"
-                class="btn-secondaire"
-                >Voir le projet</a
-              >
-            </div> 
-            <!-- Copie les blocs pour d'autres projets -->
-          </div>
-        </div>
-      </section>
-      <section id="contact">
-        <div class="container">
-          <h2>Contact</h2>
-          <form action="https://formspree.io/f/xzzvbbqk" method="POST">
-            <input
-              type="text"
-              id="name"
-              placeholder="Votre nom"
-              name="name"
-              required
-            />
-            <input
-              type="email"
-              id="email"
-              placeholder="Votre email"
-              name="email"
-              required
-            />
-            <textarea
-              id="message"
-              name="message"
-              placeholder="Votre message"
-              rows="4"
-              required
-            ></textarea>
-            <button type="submit">Envoyer</button>
-          </form>
-        </div>
-      </section>
+        </section>
+
+        <section id="contact">
+            <div class="container">
+                <div class="contact-box">
+                    <h2 class="section-title">Un projet en tête ?</h2>
+                    <form id="contact-form" action="https://formspree.io/f/xzzvbbqk" method="POST">
+                        <div class="form-row">
+                            <div class="input-group">
+                                <input type="text" name="name" placeholder="Nom" required>
+                                <span class="focus-border"></span>
+                            </div>
+                            <div class="input-group">
+                                <input type="email" name="email" placeholder="Email" required>
+                                <span class="focus-border"></span>
+                            </div>
+                        </div>
+                        <div class="input-group">
+                            <textarea name="message" placeholder="Votre message..." rows="5" required></textarea>
+                            <span class="focus-border"></span>
+                        </div>
+                        <button type="submit" class="btn-primary magnet">
+                            Envoyer l'idée <i class="fas fa-paper-plane" style="margin-left: 10px;"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </section>
     </main>
+
+    <div id="project-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <div id="modal-body"></div>
+        </div>
+    </div>
+
     <footer>
-      <p>© 2025 Ich'dev</p>
-      <ul>
-        <li><a href="https://github.com/ichdev-art">GitHub</a></li>
-        <li>
-          <a href="https://www.linkedin.com/in/ichem-jourdain-11b345333/"
-            >LinkedIn</a
-          >
-        </li>
-      </ul>
-      <a href="#header">Haut de page</a>
+        <div class="container footer-content">
+            <p>© 2026 Ich'Dev — Built for Web</p>
+            <div class="social-links">
+                <a href="https://github.com/ichdev-art" class="magnet"><i class="fab fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/ichem-jourdain-11b345333/" class="magnet"><i class="fab fa-linkedin"></i></a>
+            </div>
+        </div>
     </footer>
-  </body>
+
+    <script src="https://unpkg.com/typewriter-effect/dist/core.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            // Preloader
+            window.addEventListener('load', () => {
+                setTimeout(() => {
+                    const pl = document.getElementById('preloader');
+                    pl.style.opacity = '0';
+                    setTimeout(() => pl.style.display = 'none', 800);
+                }, 1000);
+            });
+
+            // Cursor + Magnet
+            const dot = document.querySelector('.cursor-dot');
+            const outline = document.querySelector('.cursor-outline');
+            window.addEventListener('mousemove', (e) => {
+                dot.style.left = `${e.clientX}px`;
+                dot.style.top = `${e.clientY}px`;
+                outline.animate({ left: `${e.clientX}px`, top: `${e.clientY}px` }, { duration: 400, fill: "forwards" });
+            });
+
+            const magnets = document.querySelectorAll('.magnet');
+            magnets.forEach(m => {
+                m.addEventListener('mousemove', (e) => {
+                    const r = m.getBoundingClientRect();
+                    m.style.transform = `translate(${(e.clientX - r.left - r.width/2)*0.3}px, ${(e.clientY - r.top - r.height/2)*0.3}px)`;
+                });
+                m.addEventListener('mouseleave', () => m.style.transform = 'translate(0,0)');
+            });
+
+            // Glow Effect
+            const cards = document.querySelectorAll('.skill-card, .projet-card, .testimonial-card');
+            cards.forEach(card => {
+                card.addEventListener('mousemove', e => {
+                    const rect = card.getBoundingClientRect();
+                    card.style.setProperty('--x', `${e.clientX - rect.left}px`);
+                    card.style.setProperty('--y', `${e.clientY - rect.top}px`);
+                });
+            });
+
+            // Typewriter
+            new Typewriter('.typing-text', { 
+                strings: ['Full Stack Developer', 'Designer UI/UX'], 
+                autoStart: true, 
+                loop: true,
+                delay: 60
+            });
+
+            // Modal Logic
+            const modal = document.getElementById('project-modal');
+            const data = {
+                angie: { title: "Senteur d'Angie", content: "Architecture Full Stack PHP 8. Gestion de stock et interface admin." },
+                shoes: { title: "ShoesSplash", content: "Interface E-commerce moderne avec animations SCSS haute performance." }
+            };
+            document.querySelectorAll('.projet-card').forEach(card => {
+                card.addEventListener('click', () => {
+                    const id = card.getAttribute('data-project');
+                    document.getElementById('modal-body').innerHTML = `<h2>${data[id].title}</h2><p style="margin-top:20px">${data[id].content}</p>`;
+                    modal.style.display = 'block';
+                    document.body.style.overflow = 'hidden';
+                });
+            });
+            document.querySelector('.close-modal').onclick = () => { modal.style.display = 'none'; document.body.style.overflow = 'auto'; };
+        });
+    </script>
+</body>
 </html>
