@@ -105,9 +105,23 @@
                             </div>
                         </div>
                     </article>
+
+                    <article class="projet-card magnet" data-project="Annbeautyvisage">
+                        <div class="projet-img-container">
+                            <img src="./assets/images/Annbeautyvisage.png" alt="Annbeautyvisage" class="projet-img">
+                            <div class="img-overlay"><span>Détails Techniques</span></div>
+                        </div>
+                        <div class="projet-info">
+                            <h3>Annbeautyvisage</h3>
+                            <p>Site vitrine avec prise de rendez-vous.</p>
+                            <div class="tech-tags">
+                                <span class="tag-js">HTML/CSS</span>
+                                <span class="tag-scss">JavaScript</span>
+                            </div>
+                        </div>
+                    </article>
                 </div>
             </div>
-<<<<<<< HEAD
         </section>
 
         <section id="temoignages">
@@ -122,38 +136,16 @@
                             <span>Gérante - Senteur d'Angie</span>
                         </div>
                     </div>
+
+                    <div class="testimonial-card magnet">
+                        <i class="fas fa-quote-left quote-icon"></i>
+                        <p>"J'adore le visuel du site que ichem a réalisé ! et la prise de rendez-vous est super simple. Je recommande fortement !"</p>
+                        <div class="author">
+                            <strong>Annbeautyvisage.</strong>
+                            <span>Gérante - Annbeautyvisage</span>
+                        </div>
+                    </div>
                 </div>
-=======
-        
-            <div class="projet-card">
-              <img
-                src="assets/images/off1.png"
-                alt="Aperçu du projet off"
-              />
-              <img
-                src="assets/images/off.png"
-                alt="Aperçu du projet off"
-              />
-              <img
-                src="assets/images/offresponsive.png"
-                alt="Aperçu du projet off responsive"
-              />
-              <img
-                src="assets/images/offresponsive2.png"
-                alt="Aperçu du projet off responsive 2"
-              />
-              <h3>OFF ( Open Food Fact )</h3>
-              <p>
-                Création d'un site similaire a Open Food Fact avec les recherches des scans de produit.
-              </p>
-              <p>HTML/CSS/JS</p>
-              <a
-                href="https://ichdev-art.github.io/OFF-v2/"
-                target="_blank"
-                class="btn-secondaire"
-                >Voir le projet</a
-              >
->>>>>>> f2b347ad51d81020fe4dadc07dcde535b816f72c
             </div>
         </section>
 
@@ -243,28 +235,32 @@
             });
 
             // Typewriter
-            new Typewriter('.typing-text', { 
-                strings: ['Full Stack Developer', 'Designer UI/UX'], 
-                autoStart: true, 
-                loop: true,
-                delay: 60
-            });
+            new Typewriter('.typing-text', { strings: ['Full Stack Developer', 'Designer UI/UX'], autoStart: true, loop: true, delay: 60 });
 
             // Modal Logic
             const modal = document.getElementById('project-modal');
             const data = {
-                angie: { title: "Senteur d'Angie", content: "Architecture Full Stack PHP 8. Gestion de stock et interface admin." },
-                shoes: { title: "ShoesSplash", content: "Interface E-commerce moderne avec animations SCSS haute performance." }
+                angie: { title: "Senteur d'Angie", content: "Architecture Full Stack PHP 8. Gestion de stock et interface admin.", url: "#" },
+                shoes: { title: "ShoesSplash", content: "Interface E-commerce moderne avec animations SCSS haute performance.", url: "https://ichdev-art.github.io/ShoeSplash/" },
+                Annbeautyvisage: { title: "Annbeautyvisage", content: "Site vitrine professionnel avec système de prise de rendez-vous intégré.", url: "https://annbeautyvisage.netlify.app" }
             };
+
             document.querySelectorAll('.projet-card').forEach(card => {
                 card.addEventListener('click', () => {
                     const id = card.getAttribute('data-project');
-                    document.getElementById('modal-body').innerHTML = `<h2>${data[id].title}</h2><p style="margin-top:20px">${data[id].content}</p>`;
+                    document.getElementById('modal-body').innerHTML = `
+                        <h2>${data[id].title}</h2>
+                        <p style="margin: 20px 0;">${data[id].content}</p>
+                        <a href="${data[id].url}" target="_blank" class="btn-primary" style="display:inline-block; text-decoration:none;">Visiter le site</a>
+                    `;
                     modal.style.display = 'block';
                     document.body.style.overflow = 'hidden';
                 });
             });
-            document.querySelector('.close-modal').onclick = () => { modal.style.display = 'none'; document.body.style.overflow = 'auto'; };
+
+            const closeModal = () => { modal.style.display = 'none'; document.body.style.overflow = 'auto'; };
+            document.querySelector('.close-modal').onclick = closeModal;
+            window.onclick = (e) => { if (e.target == modal) closeModal(); };
         });
     </script>
 </body>
